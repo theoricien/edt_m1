@@ -8,3 +8,8 @@ Use the config.txt file to write your lessons
 python3 EDT.py
 ```
 This will create an EDT.html file with your lessons
+
+## Example
+Before                     |  After
+:-------------------------:|:-------------------------:
+![](./imgs/before.PNG)     |  ![](./imgs/after.PNG)
