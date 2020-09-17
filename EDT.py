@@ -49,7 +49,7 @@ def parse (sheet, lessons):
 
     for lesson in reverted_lessons:
         l = lesson.split("\n")[0].split("\r\n")[0]
-        regex = "{}{}{}".format(" (\w+=\"(\w+|\d+)\")*>",l,"")
+        regex = "{}{}{}".format(" (\w+=\"(\w|\d| )+\")*>(<div class=\"(\w|-)+\" style=\"width: \d+px; left: -\d+px;\">)?",l,"(</div>)?")
         p = re.compile(regex)
         sheet = p.sub(">", sheet)
     
